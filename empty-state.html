@@ -1,0 +1,67 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../paper-styles/paper-styles-classes.html">
+<link rel="import" href="../paper-material/paper-material.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+
+<!--
+
+ `initial-avater` creates a basic UI for when there is nothing to show (like
+ when a list is empty or an error prevented loading anything meaningful).
+
+ The colors are based on --divider-color, --text-primary-color, & --secondary-text-color.
+
+ See http://www.google.com/design/spec/patterns/errors.html#errors-app-errors
+ and http://www.google.com/design/spec/patterns/empty-states.html
+
+ See the <a href="test/index.html">tests page</a> for test results (only if running locally using `polyserv`).
+
+ @demo demo/index.html
+
+-->
+<dom-module id="empty-state">
+<style>
+	:host {
+		display: block;
+	}
+
+	#iconBackground {
+			width: 192px;
+			height:192px;
+			background-color: var(--divider-color, #B6B6B6);
+			border-radius:50%;
+	}
+	#icon {
+			--iron-icon-height: 128px;
+			--iron-icon-width: 128px;
+			color: var(--text-primary-color, #FFFFFF);
+	}
+	.container {
+			color: var(--secondary-text-color, #727272);
+			padding-top: 16px;
+	}
+	</style>
+	<template>
+		<div class="container layout vertical center center-justified">
+			<paper-material id="iconBackground" elevation="1" class="layout horizontal center center-justified self-center">
+				<iron-icon id="icon" icon="{{icon}}"></iron-icon>
+			</paper-material>
+			<p class="paper-font-headline">{{title}}</p>
+		</div>
+	</template>
+	<script>
+		Polymer({
+			is: 'empty-state',
+			properties: {
+				/**
+				 * The icon to use for the image (it will be passed directly to the `icon` attribute of an `iron-icon`).
+				 */
+				icon: String,
+				/**
+				 * The text to use for the title below the empty state's image.
+				 */
+				title: String
+			}
+		});
+	</script>
+</dom-module>
