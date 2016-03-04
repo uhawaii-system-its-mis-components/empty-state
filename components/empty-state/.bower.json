@@ -1,0 +1,31 @@
+{
+  "name": "empty-state",
+  "description": "Polymer component that creates a simple colored circle with a single letter inside meant to be used as an avatar.",
+  "main": "friendly-date.html",
+  "homepage": "https://github.com/uhawaii-system-its-mis-components/empty-state/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-styles": "PolymerElements/paper-styles"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*",
+    "paper-tabs": "PolymerElements/paper-tabs#~1.3.5",
+    "uh-styles": "uhawaii-system-its-mis-components/uh-styles"
+  },
+  "_release": "176c588de9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "176c588de93504f84a7ee408a9f6323f513d50e7"
+  },
+  "_source": "git://github.com/uhawaii-system-its-mis-components/empty-state.git",
+  "_target": "master",
+  "_originalSource": "uhawaii-system-its-mis-components/empty-state",
+  "_direct": true
+}
