@@ -1,3 +1,19 @@
-[![Build Status](https://travis-ci.org/uhawaii-system-its-mis-components/empty-state.svg?branch=master)](https://travis-ci.org/uhawaii-system-its-mis-components/empty-state)
+# empty-state
 
-_[Demo and API docs](http://uhawaii-system-its-mis-components.github.io/empty-state/)_
+Start a development environment with:
+
+```
+make
+```
+Then, the first time:
+
+```
+yarn install
+polymer serve --hostname 0.0.0.0
+```
+
+or just
+
+```
+polymer serve --hostname 0.0.0.0
+```

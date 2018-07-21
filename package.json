@@ -1,0 +1,15 @@
+{
+  "name": "empty-state",
+  "homepage": "https://github.com/uhawaii-system-its-mis-components/empty-state",
+  "bugs": "https://github.com/uhawaii-system-its-mis-components/empty-state/issues",
+  "files": [
+    "empty-state.js"
+  ],
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.2",
+    "@webcomponents/webcomponentsjs": "^2.0.2"
+  },
+  "devDependencies": {
+    "@material/card": "0.37.1"
+  }
+}
