@@ -6,7 +6,10 @@
     "empty-state.js"
   ],
   "dependencies": {
+    "@polymer/iron-icon": "^3.0.0-pre.21",
+    "@polymer/iron-icons": "^3.0.0-pre.21",
     "@polymer/lit-element": "^0.5.2",
+    "@polymer/paper-styles": "^3.0.0-pre.21",
     "@webcomponents/webcomponentsjs": "^2.0.2"
   },
   "devDependencies": {
