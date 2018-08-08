@@ -50,7 +50,7 @@ class EmptyState extends LitElement {
           @apply --paper-font-headline;
         }
       </style>
-        <div id="container">
+      <div id="container">
         <paper-material id="iconBackground" class="layout horizontal center center-justified self-center">
           <iron-icon id="icon" icon="${icon}"></iron-icon>
         </paper-material>
