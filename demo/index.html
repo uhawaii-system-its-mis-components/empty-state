@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>empty-state Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../iron-flex-layout/iron-flex-layout-classes.html">
+    <link rel="import" href="../../paper-styles/paper-styles-classes.html">
+    <link rel="import" href="../../paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="../../iron-icons/iron-icons.html">
+
+    <!-- Styles setup -->
+    <style include="iron-flex iron-flex-alignment"></style>
+    <link rel="import" href="../../uh-styles/uh-theme.html">
+    <link rel="import" href="../../uh-styles/uh-styles.html">
+    <style is="custom-style" include="uh-theme"></style>
+    <style is="custom-style" include="uh-styles"></style>
+    <link rel="stylesheet" href="../../uh-styles/uh-styles.css">
+
+    <link rel="import" href="../empty-state.html">
+  </head>
+  <body unresolved class="fullbleed layout vertical center">
+  <template is="dom-bind" id="app">
+    <paper-toolbar class="primary tall fit">
+      <div class="title"><code>&lt;empty-state&gt;</code></div>
+    </paper-toolbar>
+
+    <div id="content">
+        <empty-state icon="cloud-off"
+                     title="You're offline."
+                     style="margin-top:196px;">
+        </empty-state>
+    </div>
+
+    </template>
+
+  <script>
+    (function() {
+      var scope = document.querySelector('template[is="dom-bind"]');
+
+    })();
+  </script>
+
+  </body>
+</html>
